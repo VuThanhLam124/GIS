@@ -2,6 +2,13 @@
 
 Một số thuật ngữ:
 
+- MSI: MultiSpectral Instrument
+MSI là cảm biến đa phổ trên vệ tinh Sentinel-2, có khả năng thu thập dữ liệu từ 13 dải phổ khác nhau trong các vùng ánh sáng khả kiến và cận hồng ngoại. Cảm biến MSI được sử dụng để giám sát đất liền, nông nghiệp, rừng, nước, và ứng phó với thiên tai. Dữ liệu từ MSI có thể được dùng để tạo bản đồ thực vật, chất lượng nước, và nhiều ứng dụng môi trường khác.
+- L1C: Level-1C
+L1C là dữ liệu đã qua xử lý cơ bản ở cấp độ 1C, tức là dữ liệu ảnh đã được hiệu chỉnh về quang học và địa lý. Tọa độ của từng điểm ảnh đã được xác định chính xác (gắn tọa độ địa lý), nhưng chưa có hiệu chỉnh khí quyển. Dữ liệu này chủ yếu dùng để phân tích các bề mặt đất và nước, đặc biệt hữu ích cho việc quan sát chi tiết các khu vực.
+- L2A: Level-2A
+L2A là dữ liệu đã qua xử lý thêm ở cấp độ 2A, bao gồm việc hiệu chỉnh khí quyển. Điều này có nghĩa là các tác động của khí quyển (như bụi, hơi nước, khí quyển gây nhiễu) đã được loại bỏ, giúp phản xạ bề mặt của dữ liệu chính xác hơn. Dữ liệu L2A phù hợp cho các nghiên cứu chi tiết về bề mặt Trái đất và nông nghiệp, với độ chính xác cao về thông tin phản xạ bề mặt.
+
 Level-1:
 - Dữ liệu cấp độ 1, thường là dữ liệu đã qua xử lý ban đầu (nhưng không hoàn toàn), bao gồm việc hiệu chỉnh các tín hiệu thô từ vệ tinh thành dữ liệu có thể sử dụng được. Dữ liệu này đã được hiệu chỉnh về quang học hoặc bức xạ nhưng chưa tích hợp với các dữ liệu môi trường khác.
 
