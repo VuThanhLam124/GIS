@@ -48,6 +48,20 @@ Cảm biến trên vệ tinh:
 - OLCI: Ocean and Land Colour Instrument
 
 Là một cảm biến đa phổ trên Sentinel-3, được thiết kế để quan sát màu sắc đại dương và đất liền. OLCI có thể thu thập dữ liệu trong nhiều dải quang phổ, giúp giám sát chất lượng nước, sinh khối đại dương, và các đặc điểm liên quan đến thực vật.
+
+- Level-1 EFR: Level-1 Full Resolution Earth Observation
+Dữ liệu cấp độ 1, Full Resolution (độ phân giải đầy đủ), là dữ liệu quang phổ từ OLCI đã được xử lý quang học và gắn tọa độ địa lý, nhưng chưa qua xử lý về khí quyển. Dữ liệu này có độ phân giải không gian cao nhất mà cảm biến có thể thu nhận, phù hợp cho các phân tích chi tiết về bề mặt Trái đất và đại dương.
+- Level-1 ERR: Level-1 Reduced Resolution Earth Observation
+Dữ liệu cấp độ 1, Reduced Resolution (độ phân giải giảm), là dữ liệu quang phổ đã được xử lý tương tự như EFR nhưng ở độ phân giải không gian thấp hơn. Dữ liệu ERR có dung lượng nhỏ hơn và phù hợp cho các ứng dụng cần quan sát quy mô lớn hơn, như theo dõi khí hậu hoặc các khu vực rộng lớn.
+- Level-2 LFR: Level-2 Full Resolution Land Product
+Dữ liệu cấp độ 2, Full Resolution, dành cho các sản phẩm về đất liền. Đây là dữ liệu đã qua xử lý để loại bỏ các ảnh hưởng của khí quyển và cung cấp thông tin về các chỉ số bề mặt như phản xạ và các chỉ số thực vật (NDVI, EVI). Nó có độ phân giải đầy đủ, dùng cho các phân tích chi tiết về đất liền.
+- Level-2 LRR: Level-2 Reduced Resolution Land Product
+Dữ liệu cấp độ 2, Reduced Resolution, dành cho các sản phẩm về đất liền với độ phân giải thấp hơn. Dữ liệu này phù hợp cho các ứng dụng yêu cầu quan sát trên phạm vi lớn nhưng không đòi hỏi độ phân giải cao, như theo dõi các biến động môi trường ở quy mô quốc gia hoặc toàn cầu.
+- Level-2 WFR: Level-2 Full Resolution Water Product
+Dữ liệu cấp độ 2, Full Resolution, dành cho các sản phẩm về đại dương và nước. Dữ liệu này được xử lý để cung cấp các chỉ số như màu sắc nước, độ trong, nhiệt độ bề mặt, và các đặc tính khác của nước với độ phân giải đầy đủ.
+- Level-2 WRR: Level-2 Reduced Resolution Water Product
+Dữ liệu cấp độ 2, Reduced Resolution, dành cho các sản phẩm về đại dương với độ phân giải thấp hơn. Nó thích hợp cho các ứng dụng cần dữ liệu trên phạm vi rộng, như giám sát đại dương toàn cầu, nhưng không đòi hỏi độ chi tiết cao.
+
 - SRAL: SAR Radar Altimeter
 
 Là một radar đo độ cao sử dụng kỹ thuật Synthetic Aperture Radar (SAR), được sử dụng để đo độ cao mặt nước và đất, thu thập thông tin về mực nước biển, độ cao băng và các thay đổi địa hình.
