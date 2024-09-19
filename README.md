@@ -28,3 +28,11 @@ Level-2:
 - O3_TCL: Ozone Total Column - Tổng lượng ozone trong toàn bộ cột khí quyển.
 - O3_PR: Ozone Profile - Hồ sơ ozone, cung cấp thông tin về nồng độ ozone ở các độ cao khác nhau.
 - SO2: Sulfur Dioxide (SO₂) - Khí sulfur dioxide, một chất ô nhiễm không khí.
+
+Giải thích các file dữ liệu phụ trợ: 
+- AUX_GNSSRD: Auxiliary GNSS Residual Data. Đây là dữ liệu phụ trợ về hệ thống định vị toàn cầu (GNSS - Global Navigation Satellite System). File này chứa thông tin về sai số hoặc dữ liệu hiệu chỉnh tín hiệu GNSS, được sử dụng để cải thiện độ chính xác của phép định vị vệ tinh.
+- AUX_PROQUA: Auxiliary Product Quality Data. File này chứa thông tin về chất lượng của sản phẩm dữ liệu chính. Nó có thể bao gồm các thông số đánh giá chất lượng như tỷ lệ tín hiệu/nhiễu, độ chính xác về vị trí, và các thông tin kiểm tra độ chính xác khác.
+- AX____POE__AX: Precise Orbit Ephemerides (POE). Đây là dữ liệu về quỹ đạo chính xác của vệ tinh. File này chứa thông tin về vị trí và vận tốc chính xác của vệ tinh trong quá trình hoạt động, giúp hiệu chỉnh các phép đo và dữ liệu thu được.
+- AX____ROE__AX: Restituted Orbit Ephemerides (ROE). File này cũng liên quan đến quỹ đạo, nhưng với mức độ chi tiết thấp hơn so với dữ liệu POE. ROE được sử dụng trong quá trình phân tích nhanh và hiệu chỉnh ban đầu dữ liệu vệ tinh.
+- AX____MOED_AX: Medium Orbit Ephemerides Data. Đây là dữ liệu quỹ đạo trung bình của vệ tinh. Nó cung cấp các phép đo vị trí và vận tốc vệ tinh với độ chính xác trung bình, có thể được sử dụng trong những trường hợp không yêu cầu độ chính xác cao như POE.
+- AUX_COMB: Auxiliary Combined Data. File này chứa các thông tin phụ trợ kết hợp từ nhiều nguồn khác nhau. Nó có thể chứa dữ liệu GNSS, thông tin về quỹ đạo và các thông số môi trường, được tổng hợp lại để cung cấp một bộ dữ liệu hoàn chỉnh cho các nhiệm vụ phân tích và hiệu chỉnh phức tạp.
