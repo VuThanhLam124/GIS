@@ -36,3 +36,54 @@ Giải thích các file dữ liệu phụ trợ:
 - AX____ROE__AX: Restituted Orbit Ephemerides (ROE). File này cũng liên quan đến quỹ đạo, nhưng với mức độ chi tiết thấp hơn so với dữ liệu POE. ROE được sử dụng trong quá trình phân tích nhanh và hiệu chỉnh ban đầu dữ liệu vệ tinh.
 - AX____MOED_AX: Medium Orbit Ephemerides Data. Đây là dữ liệu quỹ đạo trung bình của vệ tinh. Nó cung cấp các phép đo vị trí và vận tốc vệ tinh với độ chính xác trung bình, có thể được sử dụng trong những trường hợp không yêu cầu độ chính xác cao như POE.
 - AUX_COMB: Auxiliary Combined Data. File này chứa các thông tin phụ trợ kết hợp từ nhiều nguồn khác nhau. Nó có thể chứa dữ liệu GNSS, thông tin về quỹ đạo và các thông số môi trường, được tổng hợp lại để cung cấp một bộ dữ liệu hoàn chỉnh cho các nhiệm vụ phân tích và hiệu chỉnh phức tạp.
+
+C-SAR: Hệ thống radar sử dụng băng tần C trên vệ tinh như Sentinel-1.
+- Level-0 RAW: Dữ liệu radar thô chưa xử lý.
+- Level-1 SLC: Dữ liệu đã qua xử lý ban đầu, có độ phân giải đầy đủ, thường dùng cho phân tích chi tiết.
+- Level-1 GRD: Dữ liệu radar đã hiệu chỉnh về tọa độ mặt đất, thích hợp cho các ứng dụng thực địa.
+- Level-1 GRD COG: Dữ liệu GRD tối ưu cho lưu trữ và xử lý trên đám mây.
+- Level-2 OCN: Dữ liệu liên quan đến các thông số đại dương, như gió và sóng.
+
+Cảm biến trên vệ tinh:
+- OLCI: Ocean and Land Colour Instrument
+
+Là một cảm biến đa phổ trên Sentinel-3, được thiết kế để quan sát màu sắc đại dương và đất liền. OLCI có thể thu thập dữ liệu trong nhiều dải quang phổ, giúp giám sát chất lượng nước, sinh khối đại dương, và các đặc điểm liên quan đến thực vật.
+- SRAL: SAR Radar Altimeter
+
+Là một radar đo độ cao sử dụng kỹ thuật Synthetic Aperture Radar (SAR), được sử dụng để đo độ cao mặt nước và đất, thu thập thông tin về mực nước biển, độ cao băng và các thay đổi địa hình.
+- SLSTR: Sea and Land Surface Temperature Radiometer
+
+Là cảm biến đo nhiệt độ bề mặt biển và đất liền, được sử dụng để theo dõi biến đổi nhiệt độ trên Trái đất. Nó thu thập dữ liệu trong các dải sóng hồng ngoại và hồng ngoại nhiệt.
+- SYNERGY:
+
+Là một tổ hợp dữ liệu từ nhiều cảm biến khác nhau (OLCI, SLSTR), giúp cung cấp thông tin chi tiết hơn về môi trường đất liền và đại dương, kết hợp từ các nguồn dữ liệu khác nhau để tăng độ chính xác.
+- Auxiliary Data File (File Dữ liệu Phụ trợ):
+Đây là các file hỗ trợ việc xử lý và hiệu chỉnh dữ liệu chính, giúp cải thiện chất lượng và độ chính xác của các sản phẩm dữ liệu vệ tinh.
+
+- AUX_MOEORB: Auxiliary Medium Orbit Ephemeris Data.
+
+Dữ liệu quỹ đạo vệ tinh trung bình, cung cấp thông tin vị trí và tốc độ của vệ tinh với độ chính xác vừa phải.
+- AUX_POEORB: Auxiliary Precise Orbit Ephemeris Data.
+
+Dữ liệu quỹ đạo chính xác, được sử dụng cho các phép tính đòi hỏi độ chính xác cao về vị trí và vận tốc vệ tinh.
+- AUX_PRCPTF: Auxiliary Precipitation File.
+
+Dữ liệu liên quan đến thông số về lượng mưa, có thể được sử dụng để hiệu chỉnh dữ liệu liên quan đến quan sát bề mặt trong điều kiện có mưa.
+- AUX_GNSSRD: Auxiliary GNSS Residual Data.
+
+Dữ liệu phụ trợ từ hệ thống định vị vệ tinh toàn cầu (GNSS), cung cấp thông tin về sai số hoặc hiệu chỉnh từ tín hiệu GNSS, giúp cải thiện độ chính xác của định vị.
+- AUX_PROQUA: Auxiliary Product Quality Data 
+
+File chứa dữ liệu đánh giá chất lượng của sản phẩm, bao gồm các chỉ số về độ chính xác, tỷ lệ tín hiệu/nhiễu và các thông số kỹ thuật khác.
+- SR___ROE_AX: Restituted Orbit Ephemeris (ROE) 
+
+Dữ liệu quỹ đạo vệ tinh được khôi phục, cung cấp thông tin về quỹ đạo với độ chính xác thấp hơn dữ liệu POE, dùng cho phân tích nhanh.
+- SR___MDO_AX: Medium Orbit Ephemeris Data (MDO) 
+
+Dữ liệu quỹ đạo trung bình, cung cấp thông tin vị trí và tốc độ vệ tinh với độ chính xác trung bình.
+- SR___POE_AX: Precise Orbit Ephemeris (POE) 
+
+Dữ liệu quỹ đạo chính xác, thường được sử dụng để xử lý dữ liệu có yêu cầu cao về độ chính xác trong xác định vị trí vệ tinh.
+- AUX_COMB: Auxiliary Combined Data
+
+Đây là file phụ trợ tổng hợp, chứa thông tin từ nhiều nguồn khác nhau như dữ liệu quỹ đạo, dữ liệu GNSS và các thông số môi trường khác để hỗ trợ việc hiệu chỉnh và phân tích dữ liệu.
